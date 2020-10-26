@@ -340,7 +340,7 @@ button {
 
 
 
-#titrepop {
+#titlepopular {
     display: flex;
     align-items: center;
 
@@ -351,7 +351,7 @@ button {
 }
 
 
-#titrepop .fas {
+#titlepopular .fas {
     font-size: 150%;
 }
 
