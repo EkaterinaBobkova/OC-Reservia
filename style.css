@@ -1,790 +1,682 @@
-* {
+
+/* Vue Mobile_First */
+/* Réglages généraux */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    margin: 0;
+    font-size: 1rem;
     font-family: 'Raleway', sans-serif;
+    --primary-color: #0065FC;
+    --secondary-color: #DEEBFF;
+    --tertiary-color: #F2F2F2;
+    --tertiary-color-alt: #D9D9D9;
 }
-
-@media screen and (min-width: 1390px) {
-
-    header,
-    #section1,
-    #section2,
-    #section3 {
-        margin-left: 2.5%;
-        margin-right: 2.5%;
-    }
-}
-
-header,
-#section1,
-#section2,
-#section3 {
-    margin-left: 2.5%;
-    margin-right: 2.5%;
-}
-
-header h2,
-header p {
-    margin-left: 15.7%;
-}
-
-#maincontainer {
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
-#Titre {
-
-    width: auto;
-    line-height: 60%;
-    margin-top: 2%;
-    margin-left: 15.7%;
-
-
-}
-
-
-
-#Titre img {
-    margin-bottom: 3%;
-}
-
-nav {
-    display: flex;
-    width: 30%;
-    color: #0065FC;
-
-}
-
-a:link {
+a {
     text-decoration: none;
+    color: inherit;
 }
-
-a:visited {
-    color: #0065FC;
-}
-
-.navig1 {
-
-    padding-left: 10%;
-    padding-top: 7%;
-
-}
-
-.navig2 {
-
-    border-top: #0065FC solid 1px;
-    padding-top: 7%;
-
-    width: 30%;
-    text-align: center;
-    margin-right: -4%;
-
-}
-
-
-#container2 {
-
-    display: flex;
-    width: 70%;
-    margin-right: auto;
-    height: 100px;
-    align-items: center;
-
-}
-
-#container2 .fas {
-    background-color: #F2F2F2;
-    border: #F2F2F2 solid 1px;
-    border-radius: 15px 0% 0% 15px;
-    font-size: 19px;
-    padding: 33%;
-    margin-right: 20px;
-}
-
-.search {
-    height: 45px;
-    border: solid 1px #F2F2F2;
-    width: 140%;
-}
-
-#recherche1 {
-    margin-right: 0px;
-}
-
-#recherche3 {
-    margin-left: 0px;
-}
-
-button {
-    height: 45px;
-    border-radius: 0% 15px 15px 0%;
-    border: none;
-    width: 120%;
-    font-size: 1em;
-    background-color: #0065FC;
-    margin-left: 60%;
-    color: rgb(255, 255, 255);
-}
-
-#section1 {
-    width: 65%;
-
-
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-#filter {
+li {
     list-style: none;
-
-    padding-left: 0px;
-    display: flex;
-
-    align-items: center;
+}
+h1 {
+    font-size: 1.4rem;
+}
+.price {
     font-weight: bold;
 }
-
-.filter1,
-.filter2,
-.filter3,
-.filter4 {
-    background-color: white;
-
-    border: #e7e7e7 solid 2px;
-    border-radius: 25px;
-    margin-left: 2%;
-}
-
-.filter1 {
-    width: 13.7%;
-}
-
-.filter2 {
-    width: 10.5%;
-}
-
-.filter3 {
-    width: 12.2%;
-}
-
-.filter4 {
-    width: 17%;
-}
-
-.filter1 .fas,
-.filter2 .fas,
-.filter3 .fas,
-.filter4 .fas {
-    background-color: #DEEBFF;
-    font-size: 100%;
-    color: #0065FC;
-    margin-left: 0px;
-    position: relative;
-    text-align: left;
-
-}
-
-.filter1 .fas {
-    margin-right: 6%;
-    padding: 6.5%;
-    border-radius: 25px;
-}
-
-.filter2 .fas {
-    padding: 7.5%;
-    border-radius: 25px;
-    padding-left: 10%;
-    padding-right: 10%;
-    font-size: 110%;
-    margin-right: 10%;
-}
-
-.filter3 .fas {
-    padding: 7%;
-    border-radius: 25px;
-    font-size: 100%;
-    margin-right: 7%;
-    padding-right: 7%;
-}
-
-.filter4 .fas {
-    padding: 5.5%;
-    border-radius: 25px;
-    font-size: 100%;
-    margin-right: 6%;
-}
-
-
-
-#help {
-    background-color: white;
-    border-radius: 600px;
-    color: #0065FC;
-    font-size: 15px;
-    padding: 0.5% 1% 0.5% 1%;
-    border: #F2F2F2 solid 2px;
-}
-
-
-#container4 {
-
-
-    display: flex;
-
-    padding: 0% 0% 0% 0%;
-}
-
-#container4 img {
-
-    width: 260px;
-    height: 140px;
-    border-radius: 20px 20px 0px 0px;
-
-}
-
-#container5 {
-
-
-    display: flex;
-
-    padding: 3% 0% 2.5% 0%;
-}
-
-#container5 img {
-
-    width: 260px;
-    height: 140px;
-    border-radius: 20px 20px 0px 0px;
-
-}
-
-#tab1 {
-    margin-left: auto;
-    margin-right: auto;
-
-    border: white solid 4px;
-    border-radius: 20px 20px 20px 20px;
-    background-color: white;
-    -webkit-box-shadow: -1px 0px 48px -14px rgba(0, 0, 0, 0.52);
-    -moz-box-shadow: -1px 0px 48px -14px rgba(0, 0, 0, 0.52);
-    box-shadow: -1px 0px 48px -14px rgba(0, 0, 0, 0.52);
-    line-height: 160%;
-}
-
-#container3 {
-    background-color: #F2F2F2;
-    width: 65%;
-    border-radius: 30px 30px 30px 30px;
-}
-
-#hebcontainer3 {
+.Main {
     width: 100%;
-    padding-top: 4%;
-    padding-bottom: 1%;
-    padding-left: 4%;
 }
-
-
-#showcont3 {
-    padding-bottom: 3%;
-    padding-left: 3.5%;
-}
-
-#container6 {
-    background-color: #F2F2F2;
-    width: 30%;
-    padding-bottom: 0%;
-    border-radius: 30px 30px 30px 30px;
-    padding-top: 1%;
-}
-
-#container6 img {
-    width: 160px;
-    height: 160px;
-    float: left;
-    margin-right: 5%;
-    border-radius: 30px 0px 0px 30px;
-}
-
-#section2 {
-    margin-bottom: 80px;
-    margin-left: 15.7%;
-    margin-right: 10%;
-}
-
-
-#container7 {
+.BodyMain {
+    box-sizing: border-box;
+    padding-top: 1.63rem;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.ContentMain {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    box-sizing: border-box;
 }
 
+/* Réglages étoiles */
 
-
-#tab2 {
-    margin-top: 3%;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 5%;
-    height: 160px;
-    border-radius: 30px 30px 30px 30px;
-    border: white solid 4px;
-    background-color: white;
-    -webkit-box-shadow: -1px 0px 48px -14px rgba(0, 0, 0, 0.52);
-    -moz-box-shadow: -1px 0px 48px -14px rgba(0, 0, 0, 0.52);
-    box-shadow: -1px 0px 48px -14px rgba(0, 0, 0, 0.52);
+.fa-star {
+    color: var(--primary-color);
+}
+.fa-star.unchecked {
+    color: var(--tertiary-color-alt);
 }
 
+/* Header */
 
-
-#titlepopular {
+.HeaderMain {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: "Logo . SignUp" "NavBar NavBar NavBar";
+    flex: 1;
+    background-color: #FFF;
+    position: sticky;
+    top: 0;
+}
+.HeaderMainLogoLink {
+    display: flex;
+    align-items: flex-end;
+}
+.HeaderMainLogo {
+    grid-area: Logo;
+    padding-left: 1.25rem;
+}
+.HeaderMainSignUp {
+    grid-area: SignUp;
     display: flex;
     align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    font-weight: 700;
+    padding-right: 1.25rem;
+}
+.HeaderMainNavBar {
+    grid-area: NavBar;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 1rem;
+}
+.HeaderMainNavBarLink {
+    display: inline-flex;
+    width: 50%;
+    justify-content: center;
+    border-bottom: 3px solid var(--tertiary-color);
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+}
+.HeaderMainNavBarLink:hover {
+    border-color: var(--primary-color) ;
+    color: var(--primary-color);
+}
 
+/* Barre de recherche */
+
+.Search {
+    padding: 0.5rem 3.55%;
+}
+.Search h1 {
+    font-size: 1.4rem;
+}
+.SearchForm {
+    display: flex;
+    margin-top: 2rem;
+}
+.SearchFormIconWrapper {
+    background-color:var(--tertiary-color);
+    border-radius: 1rem 0 0 1rem;
+    padding: 1rem 1rem;
+    text-align: center;
+    font-size: 1.1rem;
+    width: 2rem;
+}
+.SearchFormBtn {
+    background-color: var(--primary-color);
+    color: #FFF;
+    cursor: pointer;
+    border: none;
+    border-radius: 1rem ;
+    padding: 0.5rem 0.5rem;
+    width: 4rem;
+    transition:  background-position 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55), box-shadow 0.2s linear;
+}
+.SearchFormBtn:hover {
+    transform: scale(1.1);
+    background-position: -3.75rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.SearchFormBtnText {
+    display: none;
+}
+.SearchFormInput {
+    border-left: none;
+    border-right: none;
+    border-bottom:  var(--tertiary-color) 1px solid;
+    border-top:  var(--tertiary-color) 1px solid;
+    padding-left: 1rem;
+    margin-right: -1rem;
+    width: 20rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.SearchFormInput::placeholder {
+    font-weight: 600; 
+    opacity: 1;
+    font-size: 1.1rem;
+}
+
+/* Filtres */
+
+.Filter {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.FilterTitle {
+    font-weight: bold;
+    margin: 0 0 1rem 0;
+    width: 100%;
+}
+.FilterFilter i{
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    height: 3rem;
+    width: 3rem;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.FilterText {
+    margin: 0 0.6rem;
+    font-weight: bold;
+}
+.FilterFilter {
+ display: flex;
+ border: var(--tertiary-color-alt) 2px solid;
+ border-left: var(--secondary-color);
+ border-radius: 2rem;
+ margin-bottom: 1rem;
+ margin-right: 0.4rem;
+ align-items: center;
+ font-weight: bold; 
+}
+.FilterFilter::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    height: 3.125rem;
+    width: 3.125rem;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.FilterFilter:hover:before {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    transition: 0.3s ease-in;
+}
+.FilterFilter::after {
+    width: 0.5rem;
+}
+.Eco::before {
+    content: "\f53a";
+}
+.Family::before {
+    content: "\f1ae";
+}
+.Romantic::before {
+    content: "\f004";
+}
+.Animals::before {
+    content: "\f6d3";
+}
+.FilterFilter:hover {
+ background-color: var(--secondary-color);
+ transition: 0.3s ease-in;
+ cursor: pointer;
+ border-color: var(--primary-color);
+}
+.FilterFooter {
+    margin-bottom: 2rem;
+}
+.FooterIcon::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f129";
+    font-weight: 600;
+    color: var(--primary-color);
+    border: var(--tertiary-color-alt) 1px solid;
+    border-radius: 50%;
+    padding: 0.3rem 0.6rem;
+    margin-right: 0.2rem;
+    line-height: 1.5rem;
+}
+/* réglages commun aux 3 sections */
+.HotelsCard, .PopularCard, .ActivitiesCard {
+    box-shadow: 0 0 1rem rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.HotelsCard:hover, .PopularCard:hover, .ActivitiesCard:hover {
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+/* Hébergements */
+
+.Hotels {
+    order: 2;
+    padding: 2rem 1.25rem;
+}
+.HotelsCard {
+    border-radius: 1.25rem;
+    box-shadow: 0 0 1rem #0000002e;
+    height: 12.5rem;
+    padding: 0.25rem;
+    background-color: #FFF;
+    max-width: 30.62rem;
+}
+.HotelsCardWrapper {
+    flex: 1;
+}
+.HotelsWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    justify-content: center;
+}
+.HotelsCardWrapContainer {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+.HotelsCardFigure {
+    display: flex;
+    margin: 0;
+    height: 7.5rem;
+}
+.HotelsCardImg, .ActivitiesCardImg {
+    border-radius: 1.25rem 1.25rem 0 0;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    object-fit: cover;
+}
+.HotelsCardFigc {
+    padding-left: 0.5rem;
+}
+.HotelsCardTitle {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+.HotelsCardStar {
+    padding-left: 0.5rem;
+}
+.More {
+    font-weight: bold;
+    padding-top: 1rem;
+}
+
+/* Favoris */
+
+.Popular {
+    order: 1;
+    background-color: var(--tertiary-color);
+    padding: 2rem 3.55% ;
+    width: 100%;
+    box-sizing: border-box;
+}
+.PopularTitle {
+    display: flex;
     justify-content: space-between;
-    width: 85%;
-    margin-left: 8%;
-    margin-top: 4%;
+    margin: 1rem 0 2rem 0;
 }
-
-
-#titlepopular .fas {
-    font-size: 150%;
+.PopularCard {
+    border-radius: 1.25rem;
+    box-shadow: 0 0 1rem #0000002e;
+    background-color: white;
+    padding: 0.25rem;
+    margin: 0.5rem 0;
+    max-height: 9.12rem;
+    min-width: 20.93rem;
+    max-width: 30.62rem;
 }
-
-.spantab2 {
-    line-height: 20px;
+.PopularCardWrapContainer {
+    display: flex;
+}
+.PopularWrapper {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+}
+.PopularCardImg {
+    width: 8rem;
+    height: 8.13rem;
+    max-height: 8.9rem;
+    object-fit: cover;
+    border-radius: 1.25rem 0 0 1.25rem;
+}
+.PopularCardFigure {
+    margin: 0;
+    max-width: 8rem;
+}
+.PopularCardWrapper {
     display: flex;
     flex-direction: column;
-    width: 40%;
-    margin-bottom: 2%;
-
+    column-gap: 0.5rem;
+    padding-left: 0.5rem;
+}
+.PopularCardFigc {
+    margin: 0;
+    flex: 1;
+}
+.PopularCardFigc h2 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+.PopularCardStar {
+    padding-bottom: 0.5rem;
 }
 
-.titrehotel {
-    font-weight: 900;
-    font-size: 100%;
+/* Activités */
+
+.Activities {
+    order: 3;
+    padding: 2rem 3.55%;
 }
-
-.spantab1 {
-    color: #0065FC;
-}
-
-.spantab3 {
-    color: #c4c3c3;
-    margin-left: 0px;
-}
-
-
-
-#section3 {
-    margin-left: 15.7%;
-    margin-right: 10%;
-}
-
-#container8 {
+.ActivitiesCard {
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 100px;
+    flex-flow: column wrap;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 1rem #0000002e;
+    margin: 1rem 0;
 }
-
-#container8 img {
-    width: 100%;
-    border-radius: 30px 30px 0px 0px;
-}
-
-
-#container8 h3 {
-    margin-left: 25px;
-}
-
-
-#vieuporte2,
-#parce2,
-#fortpome,
-#ilesfrioule,
-#garde,
-#longchamp {
-    border-radius: 30px 30px 30px 30px;
-    -webkit-box-shadow: -1px 0px 48px -14px rgba(0, 0, 0, 0.52);
-    -moz-box-shadow: -1px 0px 48px -14px rgba(0, 0, 0, 0.52);
-    box-shadow: -1px 0px 48px -14px rgba(0, 0, 0, 0.52);
-    background-color: white;
-}
-
-#Vieuxport {
-    width: 45%;
-    height: 100%;
-    margin-right: 2.5%;
-}
-
-#vieuxporte {
-    height: 500px;
-}
-
-#vieuxporte2 {
-    padding-bottom: 10px;
-    border-radius: 30px 30px 30px 30px;
-    -webkit-box-shadow: -1px 0px 48px -14px rgba(0, 0, 0, 0.52);
-    -moz-box-shadow: -1px 0px 48px -14px rgba(0, 0, 0, 0.52);
-    box-shadow: -1px 0px 48px -14px rgba(0, 0, 0, 0.52);
-    background-color: white;
-}
-
-
-
-
-#Parcnatio {
-    width: 45%;
-    margin-right: 2.5%;
-    height: 100%;
-}
-
-#parce {
-    height: 500px;
-}
-
-
-#parce2 {
-    padding-bottom: 10px;
-}
-
-
-
-
-
-
-#Fortpom {
-    width: 35%;
-    height: 100%;
-    margin-right: 2.5%;
-}
-
-#fortpome {
-    height: 100%;
-    padding-bottom: 10px;
-}
-
-#fortpome img {
-    height: 215px;
-}
-
-
-#ilesfrioule {
-    height: 100%;
-    padding-bottom: 10px;
-    margin-top: 33px;
-}
-
-
-#ilesfrioule img {
-    height: 180px;
-}
-
-#Notredame {
-    width: 35%;
-    height: 100%;
-}
-
-#garde {
-    height: 100%;
-    padding-bottom: 10px;
-}
-
-#garde img {
-    height: 190px;
-}
-
-
-#longchamp {
-    height: 100%;
-    padding-bottom: 5px;
-    margin-top: 33px;
-}
-
-
-#longchamp img {
-    height: 190px;
-}
-
-
-#container11 {
+.ActivitiesCardFigure {
     display: flex;
-    justify-content: space-around;
-    background-color: #F2F2F2;
+    margin: 0px;
+    height: 7.7rem;
+}
+.ActivitiesCardFigc {
+    display: flex;
+    align-items: center;
+    margin: 0 0.5rem;
+    font-size: 0.7rem;
+}
+:target {
+    padding-top: 7.19rem;
+    margin-top: -7.19rem;
+}
+/* Footer */
 
-    margin-left: 15.7%;
-    margin-right: 10%;
+.Footer {
+    background-color: var(--tertiary-color);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+ 
+    margin-top: 2rem;
+    flex: 1;
+}
+.Footer ul{
+    padding: 0;
+}
+.Footer li {
+    padding: 0.5rem 0;
 }
 
-#aPropos {
-    width: 20%;
+.Footer li:hover {
+    font-weight: bold;
 }
-
-#Noshebergements {
-    width: 20%;
+.Footer h3 {
+    font-size: 1rem;
 }
+/* Breakspoints */
 
-#Assistance {
-    width: 20%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 1690px) {
-    .titrehotel {
-        height: 70px;
+/* vue petit mobile */
+@media screen and (max-width: 374px) {
+    .SearchFormInput {
+        padding-left: 0;
     }
+    .PopularCard {
+        min-width: auto;
+    }
+}
 
-
-
-
-
-
-
-
-    nav {
+/* Vue Tablette */
+@media screen and (min-width: 768px) {
+    .ContentMain {
+        column-gap: 1.5rem;
+        row-gap: 2rem;
+    }
+    .ContentMain h1 {
+        margin-bottom: 2rem;
+    }
+    .Main {
+        margin: 0 3.55%;
+    }
+    .HeaderMainLogo {
+        padding-left: 3.25rem;
+    }
+    .HeaderMainSignUp {
+        padding-right: 3.25rem;
+    }
+    .Search {
+        padding: 0;
+    }
+    .Popular {
+        box-sizing: border-box;
         display: flex;
-
+        flex-flow: column wrap;
+        order: 1;
+        border-radius: 1.25rem;
+        padding: 2rem 0.5rem;
     }
-
-
-
-
-
-
-    .filter1 {
-        width: 147px;
-        font-size: 80%;
+    .PopularTitle, .HotelsTitle {
+        margin: 0;
     }
-
-    .filter2 {
-        width: 105px;
-        font-size: 80%;
-        margin-left: 3%;
+    .Hotels {
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1.5;
+        border-radius: 1.25rem;
+        background-color: var(--tertiary-color);
+        padding: 2rem 0.5rem;
     }
-
-    .filter3 {
-        width: 142px;
-        font-size: 80%;
-        margin-left: 3%;
+    .HotelsWrapper {
+        justify-content: space-around;
+        flex-flow: row wrap;
+        column-gap: 1rem;
+        row-gap: 1rem;
     }
-
-    .filter4 {
-        width: 180px;
-        font-size: 80%;
-        margin-left: 3%;
-    }
-
-
-    #container4 img {
-
-        width: 100%;
-        height: 140px;
-        border-radius: 20px 20px 0px 0px;
-
-    }
-
-    #tab1 {
-        width: 28%;
-        margin-left: 2%;
-        margin-right: 2%;
-    }
-
-
-    #container5 img {
-
-        width: 100%;
-        height: 140px;
-        border-radius: 20px 20px 0px 0px;
-
-    }
-
-
-    #container6 img {
-        width: 50%;
-    }
-
-
-    #tab2 {
-        font-size: 85%;
-        line-height: 95%;
-    }
-}
-
-
-
-
-}
-
-@media screen and (max-width: 1625px) {
-    #section3 h3 {
-        font-size: 80%;
-    }
-}
-
-@media screen and (max-width: 1390px) {
-
-    header,
-    #section1,
-    #section2,
-    #section3,
-    #container11 {
-        margin-left: 0.5%;
-        margin-right: 0.5%;
-    }
-}
-
-@media screen and (max-width: 1284px) {
-
-
-    nav {
-        margin-right: 10%;
-    }
-
-    .navi2 {
+    .HotelsHeader h1{
         width: 100%;
     }
-}
-
-@media screen and (max-width: 1125px) {
-
-
-    .titrehotel {
-        height: 70px;
+    .HotelsCard {
+        width: 45%;
+        box-sizing: border-box;
     }
-
-}
-
-
-@media screen and (max-width: 990px) {
-
-
-    #filter {
-        margin-left: 0%;
-        margin-right: 0%;
+    .Activities {
+        padding: 2rem 0;
     }
-
-    #filter h3 {
-        font-size: 85%;
+    :target {
+        padding-top: 7.19rem;
+        margin-top: -7.19rem;
     }
-
-    #container7 {
-        font-size: 80%;
+    .ActivitiesMain {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 2fr 2fr;
+        column-gap: 1rem;
+        grid-template-areas: "Port Fort Calanque Church" "Port Isle Calanque Park";
     }
-
-    #container7 .fas {
-        font-size: 85%;
+    .ActivitiesCard {
+        height: auto;
     }
-
-    .filter1,
-    .filter2,
-    .filter3,
-    .filter4 {
-        margin-left: 0%;
-        margin-right: 0%;
-        font-size: 70%;
-    }
-
-
-    .filter1 {
-        width: 257px;
-        margin-left: 5%;
-    }
-
-    .filter2 {
-        width: 185px;
-        margin-left: 1%;
-    }
-
-    .filter3 {
-        width: 252px;
-        margin-left: 1%;
-    }
-
-    .filter4 {
-        width: 340px;
-        margin-left: 1%;
-    }
-
-
-
-    nav {
-        margin-right: 14%;
-    }
-
-
-    .filter1 .fas,
-    .filter2 .fas,
-    .filter3 .fas,
-    .filter4 .fas {
-        font-size: 100%;
-    }
-
-    #container4 img {
-
-        height: 100px;
-
-    }
-
-    #container5 img {
-
-        height: 100px;
-
-    }
-
-
-    .titrehotel {
-        line-height: 150%;
-    }
-
-    #tab2 img {
-        height: 140px;
-    }
-
-    #tab2 {
-        margin-left: auto;
-        margin-right: auto;
-
-        height: 140px;
-        font-size: 100%;
-    }
-
-    #tab2 .fas {
-        margin-bottom: 100%;
-    }
-}
-
-
-
-
-@media screen and (max-width: 767px) {
-
-    #container2 {
-        width: 120%;
-        margin-left: auto;
-    }
-
-
-    #recherche2 {
-        width: 900px;
-    }
-
-    #filter {
+    .ActivitiesCard a {
+        display: flex;
         flex-direction: column;
+        height: 100%;
+    }
+    .Port {
+        grid-area: Port;
+    }
+    .Fort {
+        grid-area: Fort;
+    }
+    .Calanque {
+        grid-area: Calanque;
+    }
+    .Church {
+        grid-area: Church;
+    }
+    .Isle {
+        grid-area: Isle;
+    }
+    .Park {
+        grid-area: Park;
+    }
+    .essai {
+        flex: 1;
+    }
+    .ActivitiesCardFigc {
+        height: 3.4rem;
+    }
+    .More, .HotelsCardTitle {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .Footer {
+        padding: 2rem 3.20rem;
+        flex-direction: row;
+    }
+    .FooterMain {
+        flex: 1;
+    }
+}
+
+/* Vue Laptop */
+@media screen and (min-width: 1024px) {
+    .BodyMain {
+        padding-top: 0;
+    }
+    .ContentMain {
+        column-gap: 2.50rem;
+    }
+    .HeaderMain {
+        display: grid;
+        grid-template-columns: 66% 1fr 1fr 1fr;
+        grid-template-areas: "Logo NavBar NavBar SignUp";
+        margin-top: 0;
+        padding: 0 3.55% 1.5rem;
+        position: sticky;
+        top: 0px;
+    }
+    .HeaderMainLogo {
+        display: flex;
+        align-self: flex-end;
+        padding-left: 0;
+    }
+    .HeaderMainNavBar {
+        padding-top: 0;
+    }
+    .HeaderMainNavBarLink {
+        grid-area: NavBar;
+        border-bottom: none;
+        margin-top: 0;
+        padding-bottom: 0;
+        padding-top: 3rem;
+        border-top: 3px solid transparent ;
+    }
+    :target {
+        padding-top: 5.875rem;
+        margin-top: -5.875rem;
+    }
+    .HeaderMainNavBarLink:hover {
+        border-color: var(--primary-color) ;
+        color: var(--primary-color);
+    }
+    .HeaderMainSignUp {
+        justify-content: center;
+        align-items: flex-end;
+        padding-right: 0;
+        transition: padding-bottom 0.5s ease-out;
+    }
+    .HeaderMainSignUp:hover {
+        border-top: 3px solid var(--primary-color) ;
+        background-color: var(--secondary-color);
+        background-color: #deebff88;
+        border-radius: 0 0 1.25rem 1.25rem;
+        padding-bottom: 1.5rem;
+    }
+    .Search {
+        padding-top: 2rem;
+    }
+    .SearchTitle {
+        margin-bottom: 0;
+    }
+    .SearchSubTitle {
+        margin-top: 0;
+    }
+    .SearchFormBtn {
+        width: 8rem;
+        border-radius: 0 1rem 1rem 0;
+    }
+    .SearchFormBtnIcon {
+        display: none !important;
+    }
+    .SearchFormBtnText {
+        display: contents;
+        font-weight: bold;
+    }
+    .Hotels {
+        flex: 2;
+    }
+    
+    .Popular {
+        order: 2;
+        flex: 1;
+    }
+}
+
+/* Vue Desktop */
+@media screen and (min-width: 1440px) {
+    .Footer {
+        padding: 2rem 3.20rem;
+        flex-direction: row;
+        padding-right: 32rem;
+    }
+    .ContentMain {
+        column-gap: 3.25rem;
+    }
+    .Hotels {
+        display: flex;
+        flex-flow: row wrap;
+        order: 1;
+        row-gap: 1rem;
+        column-gap: 1rem;
+        background-color: var(--tertiary-color);
+        border-radius: 1.25rem;
+        padding: 2rem 2.25rem;
+    }
+    .HotelsCardTitle {
+        margin: 0;
+    }
+    .HotelsCard {
+        flex: 1 1 30%;
+    }
+    .HotelsHeader h1 {
+        margin: 1rem 40rem 1rem 0;
+        width: 100%;
+    }
+    .Popular {
+        width: 30%;
+        padding: 2rem 2.25rem;
+    }
+    .PopularCardFigc p {
+        margin-top: 0;
+    }
+    .Filter {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+    .FilterTitle {
+        display: flex;
+        width: 4.5rem;
+        align-items: center;
+    }
+    .FilterFilter {
+        margin-right: 1.5rem;
     }
 }
